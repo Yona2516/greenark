@@ -1,0 +1,23 @@
+# Copy environment file
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Configure database in .env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=greenark_consultants
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+
+# Configure mail settings
+MAIL_MAILER=smtp
+MAIL_HOST=your_smtp_host
+MAIL_PORT=587
+MAIL_USERNAME=your_email
+MAIL_PASSWORD=your_password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="noreply@greenark.co.tz"
+MAIL_FROM_NAME="Greenark Consultants"
